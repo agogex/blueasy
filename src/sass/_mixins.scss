@@ -1,0 +1,19 @@
+@mixin h2($text-color) {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: normal;
+    margin: 0;
+    position: relative;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', sans-serif;
+    color: $text-color;
+    
+    &:after {
+        content: '';
+        position: relative;
+        display: block;
+        width: 45px;
+        border-top: 2px solid $text-color;
+        margin: 10px 0 39px 0;
+    }
+}
