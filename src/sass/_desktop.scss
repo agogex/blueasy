@@ -1,5 +1,5 @@
 @media (min-width: $screen-lg) {
-    #header {
+    .header {
     position: relative;
     width: 100%;
     height: $header-height-desktop;
@@ -75,7 +75,7 @@
     }
 }
 
-#services {
+.services {
     background-color: $color-light-blue;
     padding: 80px 0;
     color: $color-light;
@@ -103,7 +103,7 @@
     }
 }
 
-#portfolio {
+.portfolio {
     padding: 80px 0;
     font-family: $font-primary;
     
@@ -142,7 +142,7 @@
     }
 }
 
-#section {
+.section {
     background-color: $color-dark-grey;
     padding: 80px 0;
     color: $color-light;
@@ -168,7 +168,7 @@
     }
 }
 
-#twitter {
+.twitter {
     padding: 80px 0;
     background-color: $color-light-blue;
     color: $color-light;
@@ -190,7 +190,7 @@
     }
 }
 
-#whois {
+.whois {
     background: url($img-path + 'bg-who-is.jpg') 50% 50% no-repeat;
     background-size: cover;
     min-height: 505px;
@@ -236,7 +236,7 @@
     }
 }
 
-#testimonials {
+.testimonials {
     padding: 80px 0;
     background-color: $color-light;
     color: $color-dark-grey;
@@ -259,7 +259,7 @@
     }
 }
 
-#contact {
+.contact {
     background: url($img-path + 'bg-contact.jpg') 50% 50% no-repeat;
     background-size: cover;
     min-height: 815px;
@@ -309,7 +309,7 @@
     }
 }
 
-#footer {
+.footer {
     padding: 80px 0;
     background-color: $color-dark-blue-footer;
     

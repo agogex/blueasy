@@ -3,12 +3,19 @@
     'use strict';
 
     window.onload = function() {
-        document.getElementsByClassName('mobile-menu-show')[0].addEventListener('click', toggleMobileMenu);
-        document.getElementsByClassName('mobile-menu-hide')[0].addEventListener('click', toggleMobileMenu);
+        document.getElementsByClassName('mobile-menu')[0].addEventListener('click', toggleMobileMenu);
     };
     
     function toggleMobileMenu() {
         document.getElementsByClassName('top-menu')[0].classList.toggle('visible');
-        document.getElementsByClassName('mobile-menu-hide')[0].classList.toggle('invisible');
+        var iconTag = document.getElementsByClassName('mobile-menu')[0].getElementsByClassName('fa')[0].classList;
+        if (iconTag.contains('fa-times')) {
+            iconTag.remove('fa-times');
+            iconTag.add('fa-bars');
+        } else {
+            iconTag.remove('fa-bars');
+            iconTag.add('fa-times');
+        }
+            
     }
 })();

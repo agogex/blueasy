@@ -16,7 +16,7 @@ ul {
     padding: 0;
 }
 
-#header {
+.header {
     position: relative;
     width: 100%;
     min-height: $header-height-mobile;
@@ -41,32 +41,44 @@ ul {
             }
         }
         
-        .mobile-menu-show {
+        .mobile-menu {
             float: right;
             color: $color-light-blue;
             font-size: 30px;
             cursor: pointer;
             margin: 30px;
+            z-index: 100;
+            position: relative;
         }
         
-        .mobile-menu-hide {
-            position: absolute;
-            color: $color-light-blue;
-            font-size: 30px;
-            cursor: pointer;
-            top: 30px;
-            right: 30px;
-        }
+        // .mobile-menu-show {
+        //     float: right;
+        //     color: $color-light-blue;
+        //     font-size: 30px;
+        //     cursor: pointer;
+        //     margin: 30px;
+        //     z-index: 100;
+        // }
+        
+        // .mobile-menu-hide {
+        //     position: absolute;
+        //     color: $color-light-blue;
+        //     font-size: 30px;
+        //     cursor: pointer;
+        //     top: 30px;
+        //     right: 30px;
+        // }
         
         ul {
             margin: 0 0 10px 0;
             clear: both;
             position: absolute;
             top: 0;
+            left: 0;
             width: 100%;
-            background-color: $color-dark-blue;
             height: 0;
             overflow: hidden;
+            background-color: $color-dark-blue;
             transition: height 0.25s ease-in;
             
             &.visible {
@@ -121,7 +133,7 @@ ul {
     }
 }
 
-#services {
+.services {
     background-color: $color-light-blue;
     padding: 40px 0;
     color: $color-light;
@@ -152,7 +164,7 @@ ul {
     }
 }
 
-#portfolio {
+.portfolio {
     padding: 80px 0;
     font-family: $font-primary;
     
@@ -189,7 +201,7 @@ ul {
     }
 }
 
-#portfolio {
+.portfolio {
     padding: 40px 0;
     font-family: $font-primary;
     
@@ -231,7 +243,7 @@ ul {
     }
 }
 
-#section {
+.section {
     background-color: $color-dark-grey;
     padding: 40px 0;
     color: $color-light;
@@ -273,7 +285,7 @@ ul {
     }
 }
 
-#twitter {
+.twitter {
     padding: 40px 0;
     background-color: $color-light-blue;
     color: $color-light;
@@ -306,7 +318,7 @@ ul {
     }
 }
 
-#whois {
+.whois {
     background: url($img-path + 'bg-who-is.jpg') 50% 50% no-repeat;
     background-size: cover;
     min-height: 505px;
@@ -356,7 +368,7 @@ ul {
     }
 }
 
-#testimonials {
+.testimonials {
     padding: 40px 0;
     background-color: $color-light;
     color: $color-dark-grey;
@@ -389,7 +401,7 @@ ul {
     }
 }
 
-#contact {
+.contact {
     background: url($img-path + 'bg-contact.jpg') 50% 50% no-repeat;
     background-size: cover;
     min-height: 815px;
@@ -445,7 +457,7 @@ ul {
     }
 }
 
-#footer {
+.footer {
     padding: 40px 0;
     background-color: $color-dark-blue-footer;
     

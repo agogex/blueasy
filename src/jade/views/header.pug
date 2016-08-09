@@ -1,10 +1,12 @@
-header#header
+header.header
   nav
     div.container
       div.row
         div.col-lg-2.col-md-2.logo blu<span class='blue-letter'>e</span>asy
-        div.visible-xs-block.mobile-menu-show
+        div.visible-xs-block.visible-sm-block.mobile-menu
           i.fa.fa-bars
+        // div.visible-xs-block.visible-sm-block.mobile-menu.invisible
+          // i.fa.fa-times
         ul.top-menu
           li
             a(href='#') home
@@ -16,8 +18,7 @@ header#header
             a(href='#') portfolio
           li 
             a(href='#') contact
-        div.visible-xs-block.mobile-menu-hide.invisible
-          i.fa.fa-times
+        
   div.hero
     p “I’m looking for the unexpected. 
     p I’m looking for things I’ve never seen before.” 
